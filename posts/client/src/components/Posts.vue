@@ -41,7 +41,7 @@ export default {
         usuarios: []
       },
       clientes: [],
-      show: true
+      show: false
     };
   },
   mounted() {
@@ -65,7 +65,7 @@ export default {
         usuario_id: this.busqueda.usuarios
       });
       this.clientes = clientes.data;
-      // this.show = !this.show;
+       this.show = !this.show;
     }
   }
 };
